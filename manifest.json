@@ -1,0 +1,18 @@
+{
+  "name": "Geometry Sandbox",
+  "description": "Have fun with shapes :D",
+  "version": "1.0.0",
+  
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["red-ball.js", "insert.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
